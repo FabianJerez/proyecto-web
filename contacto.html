@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="php/formulario.php" method="post" enctype="multipart/form-data">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Servicio al cliente">
+        <br>
+        
+        <label for="email">Dirección de correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="su@email.com" required>
+        <br>
+        
+        <label for="archivoAdjunto">Archivo adjunto</label>
+        <input type="file" id="archivoAdjunto" name="archivoAdjunto">
+        <br>
+        
+        <label for="mensaje">Mensaje</label>
+        <textarea cols="80" rows="3" id="mensaje" name="mensaje" placeholder="¿Cómo podemos ayudarle?" required></textarea>
+        <br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <button>
+        <a href="mailto:jerezfabian@hotmail.com">mandame un mail</a>
+    </button>
+</body>
+</html>
